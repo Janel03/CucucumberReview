@@ -1,9 +1,7 @@
 package runner;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
         //features we use to provide the path of all the feature files
@@ -18,8 +16,6 @@ import org.junit.runner.RunWith;
         monochrome = true,
         //pretty keywords prints the steps in the console to increase readability
         plugin = {"pretty"}
-
 )
 public class LoginRunner {
-
 }
