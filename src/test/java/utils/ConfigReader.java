@@ -13,13 +13,16 @@ public class ConfigReader {
             prop.load(fis);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             e.printStackTrace();
         }
         return prop;
     }
+
     public static String getPropertyValue(String key){
         //get property is the method which will read the value as per the key provided
         return prop.getProperty(key);
     }
+
 }
