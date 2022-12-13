@@ -15,7 +15,6 @@ public class LoginSteps extends CommonMethods {
     @When("User Enters The correct UserName {string}")
     public void user_enters_the_correct_user_name(String username) {
         sendText(login.usernameTextField,username);
-
     }
     @When("User Enters The correct Password {string}")
     public void user_enters_the_correct_password(String password) {
@@ -29,6 +28,7 @@ public class LoginSteps extends CommonMethods {
     public void user_is_logged_in() {
         System.out.println("i am logged in");
     }
+
     @When("user enters the username {string} and {string} verify the Error Message {string}")
     public void user_enters_the_username_and_verify_the_error_message(String username, String password, String error) {
         sendText(login.usernameTextField,username);
@@ -37,6 +37,7 @@ public class LoginSteps extends CommonMethods {
         String errorMsg = login.errorMessage.getText();
         Assert.assertEquals(error,errorMsg);
     }
+
     @When("user adds the employee")
     public void user_adds_the_employee(DataTable dataTable) {
 //        get the dataTable as Maps
@@ -51,4 +52,6 @@ public class LoginSteps extends CommonMethods {
             System.out.println(Fname);
             System.out.println(mname);
             System.out.println(lname);
-        }}}
+        }
+    }
+}

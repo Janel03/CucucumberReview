@@ -6,7 +6,6 @@ import utils.CommonMethods;
 
 public class LoginPage extends CommonMethods {
 
-
     @FindBy(xpath ="//*[@id='txtUsername']")
     public WebElement usernameTextField;
 
@@ -24,4 +23,3 @@ public class LoginPage extends CommonMethods {
     }
 
 }
-

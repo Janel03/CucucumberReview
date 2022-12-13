@@ -16,6 +16,8 @@ import org.junit.runner.RunWith;
         monochrome = true,
         //pretty keywords prints the steps in the console to increase readability
         plugin = {"pretty"}
+
 )
+
 public class LoginRunner {
 }

@@ -13,6 +13,7 @@ Feature: Test The Login Functionality
       |admin   | abracad|Invalid credentials|
       |li      | shiao  |Invalid credentials|
 
+
   Scenario:
     When user adds the employee
       |firstName|middleName|lastName|
